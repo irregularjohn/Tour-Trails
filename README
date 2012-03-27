@@ -2,3 +2,17 @@ Wymaga odpalonego MongoDB i klucza do api last.fm (trzeba podmienic w kodzie dbH
 
 Po wpisaniu nazwy zespolu, aplikacja pobiera dane o jego trasach z last.fm, dodaje odpowiednie dane do bazy Mongo i je wyswietla.
 Jesli zespol byl wczesniej dodany do bazy, nie nastepuje pobieranie danych z last.fm.
+
+Dane pobierane sa z Last.fm w formacie json (mozliwy jest tez format xml). 
+Przyk³adowe zapytanie curl i wynik:
+
+**http://ws.audioscrobbler.com/2.0/?method=artist.getpastevents&artist=Them+Crooked+Vultures&api_key=API_KEY&limit=1&format=json**
+(gdzie API_KEY to klucz z API last.fm)
+Zapytanie zwraca dane na temat najbardziej aktualnego koncertu z archiwum koncertów Them Crooked Vultures. (limit=1 na koncu zapytania ogranicza wynik do jednego, format=json ustawia format) 
+
+GOTO https://github.com/irregularjohn/Tour-Trails/blob/master/qotsatest.txt
+
+Aplikacja wyciaga z tych danych nazwe wydarzenia, szerokosc i wysokosc geograficzna.
+
+Schemat dzialania:
+https://raw.github.com/irregularjohn/Tour-Trails/master/schemat.png
