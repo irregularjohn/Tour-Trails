@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+body
+{
+	background-color: #111111;
+	color:white;
+	padding:0px;
+	margin: 0px;
+	font-family: Century Gothic, Arial, Verdana;
+	font-size: 21px;
+}
+
+#cont
+{
+	width:100%;
+	position:relative;
+	padding:0px;
+	margin: 0px;
+	height:100%;
+}
+
+#left
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20%;
+	padding-left:15px;
+	padding-top:15px;
+	margin: 0px;
+}
+
+#right
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width:80%;
+	height:100%;
+	margin: 0px;
+	
+}
+
+
+.stdbutton
+{
+	background-color:#333333;
+	border: 1px solid #6a6a6a;
+	color:white;
+	font-weight: bold;
+	font-family: Century Gothic, Arial, Verdana;
+	font-size: 17px;
+}
+
+#years
+{
+	margin-left:30px;
+	margin-top:30px;
+}
+
+.stdinput
+{
+	background-color:#111111;
+	border: 1px solid #6a6a6a;
+	color:white;
+	width:60%;
+	font-family: Century Gothic, Arial, Verdana;
+	font-size: 17px;
+}
+
+#loader
+{
+	display: none;
+}
+
+#lastfm
+{
+	font-size:10px;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	color:#777777;
+}
+
+a, a:visited
+{
+	color:white;
+	text-decoration: none;
+}
+a:hover
+{
+	font-weight: bold;
+}
