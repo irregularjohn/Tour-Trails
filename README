@@ -1,0 +1,4 @@
+Wymaga odpalonego MongoDB i klucza do api last.fm (trzeba podmienic w kodzie dbHandler.php)
+
+Po wpisaniu nazwy zespolu, aplikacja pobiera dane o jego trasach z last.fm, dodaje odpowiednie dane do bazy Mongo i je wyswietla.
+Jesli zespol byl wczesniej dodany do bazy, nie nastepuje pobieranie danych z last.fm.
